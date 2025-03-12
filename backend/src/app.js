@@ -19,6 +19,10 @@ app.use(express.json(({limit:"16kb"})))
 app.use(express.static('public'))
 app.use(cookieParser())
 
+app.post("/", (req, res) => {
+    res.send("Hello, World!");
+});
+
 import { router } from "./routes/user.routes.js";
 app.use("/users",router)
 import videorouter from './routes/video.routes.js'
