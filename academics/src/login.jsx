@@ -17,7 +17,7 @@ const LoginPage = () => {
   const handleLogin = async (values, { setSubmitting }) => {
     try {
       const response = await axios.post(
-        "http://localhost:550/users/login", // ✅ API URL fixed
+        "https://api.azaddeal.com/users/login", // ✅ API URL fixed
         values,
         // { withCredentials: true } // ✅ Credentials enabled
       );
